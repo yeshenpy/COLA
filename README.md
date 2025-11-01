@@ -1,6 +1,6 @@
 # (NeurIPS 2025) COLA: Towards Efficient Multi-Objective Reinforcement Learning with Conflict Objective Regularization in Latent Space
 
-This repository contains the official implementation of **COLA**, a *general-policy* Multi-Objective Reinforcement Learning (MORL) framework that learns in a shared latent space and mitigates optimization conflicts across preferences.
+**SOTA Performance** This repository contains the official implementation of **COLA**, a *general-policy* Multi-Objective Reinforcement Learning (MORL) framework that learns in a shared latent space and mitigates optimization conflicts across preferences.
 
 **Paper:** COLA: Towards Efficient Multi-Objective Reinforcement Learning with Conflict Objective Regularization in Latent Space (NeurIPS 2025). 
 
