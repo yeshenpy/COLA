@@ -1,9 +1,8 @@
-# COLA: Towards Efficient Multi-Objective Reinforcement Learning with Conflict Objective Regularization in Latent Space
+# (NeurIPS 2025) COLA: Towards Efficient Multi-Objective Reinforcement Learning with Conflict Objective Regularization in Latent Space
 
 This repository contains the official implementation of **COLA**, a *general-policy* Multi-Objective Reinforcement Learning (MORL) framework that learns in a shared latent space and mitigates optimization conflicts across preferences.
 
-**Paper:** COLA: Towards Efficient Multi-Objective Reinforcement Learning with Conflict Objective Regularization in Latent Space (NeurIPS 2025). PDF on OpenReview: https://openreview.net/pdf?id=Cldpn7H3NN  
-**Code repo (paper link):** https://github.com/yeshenpy/COLA
+**Paper:** COLA: Towards Efficient Multi-Objective Reinforcement Learning with Conflict Objective Regularization in Latent Space (NeurIPS 2025). 
 
 ## ✨ Overview
 
@@ -18,7 +17,7 @@ We adopt **Envelope SAC** as the backbone (general-policy) algorithm and conditi
 - [Installation](#installation)
 - [Quick Start](#quick-start)
 - [Supported Environments](#supported-environments)
-- [Training & Evaluation](#training--evaluation)
+- [Training](#training)
 - [Project Structure](#project-structure)
 - [Baselines](#baselines)
 - [Results at a Glance](#results-at-a-glance)
@@ -31,10 +30,7 @@ We adopt **Envelope SAC** as the backbone (general-policy) algorithm and conditi
 - **Objective-agnostic latent space (OADM):** compact state & state–action representations for efficient multi-objective optimization.
 - **Conflict-aware value learning (COR):** reduces interference among preferences when their optimization directions conflict.
 - **General policy conditioning:** learn a single policy \(\pi(a\mid s, \omega)\) that generalizes across preferences \(\omega\).
-- **Reproducible evaluation:** utilities to compute Hypervolume (HV) and Utility (UT) across preference grids.
-- **CPU-friendly:** the code supports CPU-only training for MuJoCo-based tasks (GPU optional for some setups).
-
-> Note: Previous mentions of EP sets, Q-network replay buffers, or evolutionary-algorithm integration were removed or marked optional to match the paper. The core contributions are **OADM** and **COR** on top of a general-policy Envelope SAC backbone.
+- **CPU-friendly:** the code supports CPU-only training for MuJoCo-based tasks.
 
 ## 🔧 Installation
 
@@ -53,8 +49,6 @@ conda create -n cola python=3.10 -y
 conda activate cola
 pip install -r requirements.txt
 ```
-
-If you use MuJoCo, ensure it is properly installed and your environment variables (e.g., `LD_LIBRARY_PATH`) are set if needed.
 
 ## 🚀 Quick Start
 
@@ -87,10 +81,11 @@ During training/evaluation we use preference grids to cover the space and report
   - 3-objective: `0.05`  
   - 4-objective: `0.2`  
   - 5-objective: `0.2`
-
+  - 
+More details can be found in the Appendix of paper.
 
 ### Hardware
-Experiments can be run on CPU; GPU is optional. (Some DMC experiments may use GPU.)
+Experiments can be run on CPU; GPU is optional.
 
 ## 📁 Project Structure
 
@@ -143,4 +138,4 @@ This project is released under the terms in `LICENSE`.
 
 ## 📫 Contact
 
-For questions or issues, please open a GitHub issue or contact the authors.
+For questions or issues, please open a GitHub issue or contact me.
