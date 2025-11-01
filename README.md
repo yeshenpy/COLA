@@ -12,18 +12,6 @@ COLA addresses two key challenges in general-policy MORL:
 
 We adopt **Envelope SAC** as the backbone (general-policy) algorithm and condition both value and policy on preferences to cover the entire preference space.
 
-## 📚 Table of Contents
-- [Features](#features)
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Supported Environments](#supported-environments)
-- [Training](#training)
-- [Project Structure](#project-structure)
-- [Baselines](#baselines)
-- [Results at a Glance](#results-at-a-glance)
-- [Citation](#citation)
-- [License](#license)
-- [Contact](#contact)
 
 ## ✅ Features
 
