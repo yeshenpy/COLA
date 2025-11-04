@@ -69,7 +69,7 @@ During training/evaluation we use preference grids to cover the space and report
   - 3-objective: `0.05`  
   - 4-objective: `0.2`  
   - 5-objective: `0.2`
-  - 
+  
 More details can be found in the Appendix of paper.
 
 ### Hardware
