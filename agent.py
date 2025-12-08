@@ -270,7 +270,6 @@ def rl_to_evo(rl_agent, evo_net):
         target_param.data.copy_(param.data)
 
 from model import Conflict_caculate, PCGrad
-from ES import ISODD
 import pickle
 class SacAgent:
 
@@ -336,8 +335,6 @@ class SacAgent:
         torch.backends.cudnn.benchmark = False
         self.q_frequency = q_frequency
         self.QM = QMonitor()
-
-        self.evolution = ISODD(iso_sigma = self.iso_sigma,line_sigma = self.line_sigma)
 
         self.device = torch.device("cuda" if cuda and torch.cuda.is_available() else "cpu")
 
